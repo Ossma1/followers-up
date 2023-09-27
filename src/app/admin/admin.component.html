@@ -1,0 +1,10 @@
+<nav class="navbar nnavbar-expand-lg navbar-dark bg-fark">
+<div class="countainer-fluid">
+  <a *ngIf="auth.hasRole('admin')" href="#" class="navbar-brand" style="color: black;">Navbar</a>
+  <button  (click)="onclick()" type="button" style="color: black;" data-bs-toggle="coollapse">log Out</button>
+  <a href="" >{{auth.AuthUser?.email}}</a>
+</div>
+
+</nav>
+<router-outlet></router-outlet>
+{{backroundEnv}}
